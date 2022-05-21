@@ -1,0 +1,80 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.54;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+:root {
+  --primary-color: #70ace6;
+  --secondary-color:#44586e;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+#navbar {
+background-color: var(--primary-color);
+  color: #fff;
+  top:0;
+  left: 0;
+  padding: 0rem 3rem;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100vw;
+}
+#navbar ul {
+  list-style: none;
+  display: flex;
+  
+}
+
+#navbar ul a {
+  display: inline-block;
+  padding: 1.2rem 2rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+#navbar a:hover {
+  background-color: --primary-color;
+  color: black;
+}
+
+#main-footer {
+  border-top: solid 4px var(--primary-color);
+  padding: 1rem;
+  background-color: #444;
+  color: #fff;
+}
+#elaborate {
+  display: flex;
+  flex-direction: row;
+  border: 2px black solid;
+  background-color: grey;
+  width: 100vw;
+ 
+}
+.descript {
+  margin: 50px;
+}
+#projects .projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 3rem;
+  grid-column-gap: 2rem;
+  margin-top: 2rem;
+}
+@media (max-width: 600px) {
+   #navbar {
+    padding: 0rem 1rem;
+    justify-content: center;
+  }
+}
