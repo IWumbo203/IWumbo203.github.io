@@ -41,6 +41,19 @@ nav {
     border-left: 2px solid #66FF33;
 }
 
+#navbar-links {
+    display: block; /* Ensure navbar links are always visible */
+}
+
+#navbar-toggle {
+    color: #66FF33;
+    font-size: 20px;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Ensure it's above other content */
+    display: none; /* Hide it by default */
+}
+
 nav a {
     color: #66FF33;
     text-decoration: underline; /* Add underline to links */
@@ -85,4 +98,95 @@ nav a:hover {
 /* Three tiles in a row */
 .three-tiles .tile {
     width: calc(33.33% - 20px);
+}
+
+@media screen and (max-width: 768px) {
+    #header img {
+        width: 100%;
+    }
+    #header-nav-container {
+        display: block;
+        width: 90%;
+        justify-content: space-between; /* Center content horizontally */
+        padding: 5px; /* Padding for top and bottom */
+        /*border-top: 2px solid #66FF33;
+        border-left: 2px solid #66FF33;
+        border-right: 2px solid #66FF33;
+        */
+        border-bottom: 0px solid #66FF33;
+        
+    }
+
+    nav {
+        color: #66FF33;
+        line-height: 2;
+        text-align: center;
+        
+        padding-top: 4vh;
+        border-left: 0px solid #66FF33;
+
+        /* Center items horizontally and vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    #navbar-links {
+        display: none;
+        clear: both;
+    }
+
+    #navbar-links.active {
+        display: block;
+    }
+
+    /* Hamburger menu */
+    #navbar-toggle {
+        display: block;
+        font-size: 30px; /* Increase the font size */
+        animation: fadeIn 0.5s ease-in-out; /* Add animation */
+    }
+    /* Adjustments for smaller screens */
+    .tile {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tile-container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tile img {
+        max-width: 80%; /* Ensure images don't exceed the width of their container */
+        height: auto; /* Maintain the aspect ratio */
+    }
+
+    .one-tile .tile {
+        width: 100%;
+    }
+    
+    /* Two tiles in a row */
+    .two-tiles .tile {
+        width: 100%
+    }
+    
+    /* Three tiles in a row */
+    .three-tiles .tile {
+        width: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
