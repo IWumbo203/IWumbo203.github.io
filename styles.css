@@ -106,7 +106,7 @@ nav a:hover {
     }
     #header-nav-container {
         display: block;
-        width: 90%;
+        width: 100%;
         justify-content: space-between; /* Center content horizontally */
         padding: 5px; /* Padding for top and bottom */
         /*border-top: 2px solid #66FF33;
