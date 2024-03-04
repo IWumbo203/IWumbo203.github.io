@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrogDaze</title>
+    <style>
+        body {
+            background-color: #000000;
+            margin-left: 5vh;
+            margin-right: 5vh;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        #header-nav-container {
+            display: flex;
+            width: 100%;
+            justify-content: space-between; /* Center content horizontally */
+            padding: 20px 0; /* Padding for top and bottom */
+            /*border-top: 2px solid #66FF33;
+            border-left: 2px solid #66FF33;
+            border-right: 2px solid #66FF33;
+            */
+            border-bottom: 2px solid #66FF33;
+            
+        }
+
+        #header {
+            padding-right: 20px; /* Add padding to separate from nav */
+            color: #FFFFFF;
+        }
+
+        #content {
+            padding: 20px;
+            color: #66FF33;
+            font-family: Arial;
+            text-align: center;
+        }
+
+        nav {
+            color: #66FF33;
+            line-height: 2;
+            text-align: center;
+            padding-top: 4vh;
+            border-left: 2px solid #66FF33;
+        }
+
+        nav a {
+            color: #66FF33;
+            text-decoration: underline; /* Add underline to links */
+            margin-right: 10px;
+        }
+
+        nav a:hover {
+            color: #FFFFFF;
+        }
+
+        .tile-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            align-items: stretch;
+        }
+
+        .tile {
+            width: calc(30% - 20px); /* Adjust the width of tiles here */
+            background-color: #333333;
+            color:#66FF33;
+            border: 2px solid #66FF33;
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .tile p a {
+            color: #66FF33; /* Set text color to green for <p> elements within .tile */
+        }
+        .one-tile .tile {
+            width: 100%;
+        }
+
+        /* Two tiles in a row */
+        .two-tiles .tile {
+            width: calc(50% - 20px);
+        }
+
+        /* Three tiles in a row */
+        .three-tiles .tile {
+            width: calc(33.33% - 20px);
+        }
+    </style>
+</head>
+<body>
+    <div id="header-nav-container">
+        <div id="header">
+            <img src="images/image001.gif" alt="FROGDAZE">
+            <p style="text-align: center;">HOP IN AND LOOK AROUND</p>
+        </div>
+        <nav>
+            <a href="frogaphiles.htm">FROGAPHILES</a>
+            <a href="serious_frog_stuff.htm">CARING FOR YOUR FROG</a>
+            <a href="specific_frog_care.htm">SPECIFIC FROG CARE</a>
+            <a href="bullfrogs_and_leopard_frogs.htm">BULLFROGS AND LEOPARD FROGS</a>
+            <a href="fire_bellies.htm">FIRE BELLY TOADS</a>
+            <a href="https://web.archive.org/web/20051230082856/http://www.frogdaze.com/pac_man_frog.htm">PACMAN FROG</a>
+            <a href="https://web.archive.org/web/20051230082856/http://www.frogdaze.com/pyxie_frog.htm">PYXIE FROG</a>
+            <a href="https://web.archive.org/web/20051230082856/http://www.frogdaze.com/tomato_frog.htm">TOMATO FROG</a>
+            <a href="https://web.archive.org/web/20051230082856/http://www.frogdaze.com/tree_frogs.htm">TREE FROGS</a>
+            <a href="https://web.archive.org/web/20051230082856/http://www.frogdaze.com/white.htm">WHITE'S TREE FROG</a>
+            <a href="https://web.archive.org/web/20051230082856/http://www.frogdaze.com/frog_pictures.htm">FROG PICTURES</a>
+            <a href="https://web.archive.org/web/20051230082856/http://www.frogdaze.com/just%20hangin'%20out.htm">JUST HANGING OUT</a>
+            <a href="https://web.archive.org/web/20051230082856/http://www.frogdaze.com/frog_art_gallery2.htm">FROG ART GALLERY</a>
+            <a href="https://web.archive.org/web/20051230082856/http://www.frogdaze.com/melodrama.htm">MELODRAMA</a>
+            <a href="https://web.archive.org/web/20051230082856/http://www.frogdaze.com/links.htm">LINKS</a>
+            <a href="https://web.archive.org/web/20051230082856/http://www.frogdaze.com/bibliography_and_resources.htm">REFERENCES</a>
+        </nav>
+    </div>
+    <div id="content">
+        <div class="tile-container one-tile">
+            <div class="tile">
+                <h1 style="font-size: 2em; font-family: 'Comic Sans MS'; color: #FF0000;">A HOPPY HOLIDAY</h1>
+                <img src="images/pixelated_frog_santa_hat.jpg" alt="A HOPPY HOLIDAY">
+            </div>
+        </div>
+        <div class="tile-container three-tiles">
+            <div class="tile">
+                <p><a href="https://web.archive.org/web/20051230082856/http://www.frogdaze.com/frog_doctor.htm"><b>A visit by the frog doctor.</b></a></p>
+                <a href="https://web.archive.org/web/20051230082856/http://www.frogdaze.com/help.htm">
+                <img src="images/sick_frog.jpg" alt="sick frog" style="width: 80px; height: auto;">
+                <p><b>Help! My frog or toad is sick!</a></b></p>
+                
+            </div>
+            <div class="tile">
+                <p><b><a href="https://web.archive.org/web/20051230082856/http://www.frogdaze.com/meet%20the%20webmaster.htm">Meet the webmaster</a></b></p>
+                <a href="https://web.archive.org/web/20051230082856/http://www.frogdaze.com/meet%20the%20webmaster.htm">
+                <img src="images/frog%20at%20computer.gif" alt="Webmaster"></a>
+                <p>(And see photos of all of Webster's friends)</p>
+            </div>
+            <div class="tile">
+                <p><b>Josephine Quotes</b></p>
+                <p><b>"Hello. I'm Josephine. I'll be your guide."</b></p>
+                <p><b>"A frog by any other name is still as sweet and still a frog."<br>"Frogs catch more flies than honey ever can."</b></p>
+            </div>
+        </div>  
+        <div class="tile-container two-tiles">
+            <div class="tile">
+                <a href="https://web.archive.org/web/20051230082856/http://www.frogdaze.com/dear_josephine.htm">
+                    <img border="0" src="images/j0101316.gif" width="100" height="72" alt="Josephine">
+                </a>
+                <p>
+                    <b>
+                        "I know you will find something to croak about. Click on my picture and I'll talk to
+                        <a href="https://web.archive.org/web/20051230082856/http://www.frogdaze.com/dear_josephine.htm">Dear Josephine. Advice for frogs and humans.</a>
+                        you in red eye frog language."
+                    </b>
+                </p>
+            </div>
+        
+            <div class="tile">
+                <a href="https://web.archive.org/web/20051230082856/http://www.frogdaze.com/a_letter_inquiring_about_josephi.htm">
+                    <img border="0" src="images/anfrogprince.gif" width="98" height="175" alt="Frog Prince">
+                </a>
+                <p>
+                    <b>
+                        <a href="https://web.archive.org/web/20051230082856/http://www.frogdaze.com/a_letter_inquiring_about_josephi.htm">The Prince has a crush on Josephine!</a>
+                        Read all about it here!
+                    </b>
+                </p>
+            </div>
+        </div>
+        <div class="tile-container two-tiles">
+            <div class="tile">
+                <a href="https://web.archive.org/web/20051230082856/http://www.frogdaze.com/if_frogs_could_talk.htm">
+                    <img border="0" src="images/book%20cover%20with%20frog2.jpg" width="300px" height="auto" alt="Book Cover">
+                </a>
+                <p>
+                    <b>
+                        <a href="https://web.archive.org/web/20051230082856/http://www.frogdaze.com/if_frogs_could_talk.htm">We've written a book! Click here and find out more.</a>
+                    </b>
+                </p>
+            </div>
+            <div class="tile">
+                <a href="https://web.archive.org/web/20051230082856/http://www.frogdaze.com/FROGPUZZLE.htm">
+                    <img border="0" src="images/napfor%20puzzle.jpg" width="300px" height="auto" alt="Frog Puzzle">
+                </a>
+                <p>
+                    <b>
+                        <a href="https://web.archive.org/web/20051230082856/http://www.frogdaze.com/FROGPUZZLE.htm">FROG PUZZLE!</a>
+                    </b>
+                </p>
+            </div>
+        </div>
+        <div class="tile-container">
+            <!-- Tile 1 -->
+            <div class="tile">
+                <img src="images/frogmail.gif" alt="Contact Me" width="585" height="33">
+                <p><a href="mailto:carole@frogdaze.com" style="color: #66FF33;">Contact me</a></p>
+            </div>
+    
+            <!-- Tile 2 -->
+            <div class="tile">
+                <img src="images/dontlink.gif" alt="Image" width="106" height="70">
+                <p style="color: #66FF33;">Published: 03/03/2024</p>
+                <p style="color: #66FF33;">Writer: Carole</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
