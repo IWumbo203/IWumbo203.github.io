@@ -17,6 +17,7 @@ body {
     border-left: 2px solid #66FF33;
     border-right: 2px solid #66FF33;
     */
+    border-top: 2px solid #66FF33;
     border-bottom: 2px solid #66FF33;
     
 }
@@ -29,7 +30,7 @@ body {
 #content {
     padding: 20px;
     color: #66FF33;
-    font-family: Arial;
+    font-family: 'Comic Sans MS';
     text-align: center;
 }
 
