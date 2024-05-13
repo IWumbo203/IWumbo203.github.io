@@ -102,6 +102,9 @@ nav a:hover {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        margin: 0px;
+    }
     #header img {
         width: 100%;
     }
@@ -147,6 +150,13 @@ nav a:hover {
         display: block;
         font-size: 30px; /* Increase the font size */
         animation: fadeIn 0.5s ease-in-out; /* Add animation */
+    }
+
+    #content {
+        padding: 5px;
+        color: #66FF33;
+        font-family: 'Comic Sans MS';
+        text-align: center;
     }
     /* Adjustments for smaller screens */
     .tile {
