@@ -101,6 +101,25 @@ nav a:hover {
     width: calc(33.33% - 20px);
 }
 
+.content-container {
+    display: flex;
+    flex-direction: row; /* Make content horizontal by default */
+    justify-content: space-around; /* Spacing between the text containers */
+}
+
+.text-container {
+    margin-top: 10px;
+    width: calc(33.33% - 20px); /* Adjust width to accommodate three blocks with spacing */
+}
+
+.text-container p {
+    margin-bottom: 10px;
+}
+
+.text-container b {
+    font-size: 1.2em; /* Increase the font size of bold text */
+}
+
 @media screen and (max-width: 768px) {
     body {
         margin: 0px;
@@ -153,7 +172,7 @@ nav a:hover {
     }
 
     #content {
-        padding: 5px;
+        padding: 10px;
         color: #66FF33;
         font-family: 'Comic Sans MS';
         text-align: center;
@@ -190,6 +209,16 @@ nav a:hover {
     /* Three tiles in a row */
     .three-tiles .tile {
         width: 100%;
+    }
+
+    .content-container {
+        flex-direction: column; /* Make content vertical on mobile devices */
+    }
+
+    .text-container {
+        width: 100%; /* Occupy full width on mobile devices */
+        margin-left: 0; /* Remove left margin on mobile devices */
+        flex: 1; /* Make text container occupy full width */
     }
 }
 
