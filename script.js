@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", function() {
     var currentDate = new Date();
     var currentMonth = currentDate.getMonth(); // Get the current month (0 = January, 1 = February, ..., 11 = December)
     var currentDay = currentDate.getDate(); // Get the current day of the month
-    //currentMonth = 11;
-    //currentDay = 1;
+    //currentMonth = 3;
+    //currentDay = 12;
     switch (currentMonth) {
         case 0: // January
             if (currentDay >= 1 && currentDay <= 7) {
@@ -61,6 +61,6 @@ document.addEventListener("DOMContentLoaded", function() {
             break;
         default:
             updateHolidayContent("null", "shouldnt matter", "shouldnt be");
-            break;
+        break;
     }
 });
