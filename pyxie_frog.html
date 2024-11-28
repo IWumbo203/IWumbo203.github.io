@@ -4,10 +4,28 @@
 <body bgcolor="#CC9900">
 <img border="0" width="412" height="85" src="images/pyxiefrog.gif" alt="PYXIE FROG" v:shapes="_x0000_s1025" style="display: block; margin: 0 auto;"></p>
 <p align="center"><b><font face="Comic Sans MS" size="2">&quot;This is 
-a great big frog! I don't want to share a tank with them&quot;! (Josephine)</font></b></p>
+a great big frog! I don't want to share a tank with them&quot;! (Millie)</font></b></p>
 <p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="audio/african_bull_frog.wav">
-<img border="3" src="images/cute webster for webjpg.jpg" width="400" height="299"></a>
+<audio id="audio_" src="audio/african_bull_frog.wav" preload="auto"></audio>
+<img border="3" id="play_audio" src="images/cute webster for webjpg.jpg" width="400" height="299"></a>
+
+<script>
+  const playButton1 = document.getElementById('play_audio');
+  const audio1 = document.getElementById('audio_');
+
+  // Add event listener to the first image
+  playButton1.addEventListener('click', function() {
+    // Check if audio is paused or ended
+    if (audio1.paused || audio1.ended) {
+      // Play audio
+      audio1.play();
+    } else {
+      // Pause audio
+      audio1.pause();
+    }
+  });
+</script>
+
 <b><font face="Arial" size="2">Click on Webster's picture and hear him talk to 
 you.</font></b></p>
 <p>

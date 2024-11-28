@@ -7,10 +7,18 @@
 
 <p align="center"><img border="0" width="388" height="71" src="images/whitetreefrog.gif" alt="WHITE'S TREE FROGS" v:shapes="_x0000_s1025"></p>
 <p align="center"><b><font face="Arial" size="2" color="#003300">&quot;Well, 
-they may be tree frogs, but they're a lot bigger than me&quot;! (Josephine)</font></b></p>
+they may be tree frogs, but they're a lot bigger than me&quot;! (Millie)</font></b></p>
 <p align="center"><b><font face="Arial" size="2" color="#003300">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click 
-my picture and hear me talk to you </font></b><a href="audio/whitecall.wav">
-<img border="0" src="images/limeyanddudleyweb.jpg" width="250" height="187"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+my picture and hear me talk to you </font></b><!--<a href="audio/whitecall.wav">-->
+<img border="0" src="images/limeyanddudleyweb.jpg" id='clickableImage' width="250" height="187"></a>
+<!-- JavaScript -->
+<script>
+  const image = document.getElementById('clickableImage');
+  const audio = new Audio('audio/whitecall.wav');
+  image.addEventListener('click', function() {
+      audio.play();
+  });
+</script>
 <img border="0" src="images/DSC00808.JPG" width="250" height="187"></p>
 <p align="left"><b><font face="Arial" color="#003300" size="2">Here is
 Limey and Dudley. Both these frogs are brown...and green. Limey here is green 
