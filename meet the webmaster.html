@@ -22,9 +22,16 @@
     <td width="101%" height="1225" colspan="2">
 &nbsp;<p>&nbsp;</p>
     <p align="center"><img border="0" width="590" height="172" src="images/webmaster_banner.gif" alt="THE WEBMASTER" v:shapes="_x0000_s1025"></p>
-    <p align="center">
-    <a href="audio/african_bull_frog.wav">
-    <img border="0" src="images/webmeister1.jpg" width="425" height="317"></a></p>
+	<p align="center">
+    <img border="0" src="images/webmeister1.jpg" id="clickableImage" width="425" height="317">
+	<!-- JavaScript -->
+	<script>
+		const image = document.getElementById('clickableImage');
+		const audio = new Audio('audio/african_bull_frog.wav');
+		image.addEventListener('click', function() {
+			audio.play();
+		});
+	</script></p>
 	<p align="center">
     <font face="Arial" size="2" color="black">Webster speaks in African 
 	bullfrog language by clicking his picture. Perhaps its some comment about 
